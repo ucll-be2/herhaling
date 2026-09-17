@@ -1,10 +1,10 @@
 info:
-  name: DELETE /api/v1/actors/{actor_id}
+  name: Get actor with id
   type: http
-  seq: 5
+  seq: 2
 
 http:
-  method: DELETE
+  method: GET
   url: "{{host}}/api/v1/actors/{{actor_id}}"
   auth: inherit
 

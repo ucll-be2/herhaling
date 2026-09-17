@@ -1,5 +1,5 @@
 info:
-  name: GET /api/v1/movies with start year
+  name: Get movies with start year/end year
   type: http
   seq: 7
 

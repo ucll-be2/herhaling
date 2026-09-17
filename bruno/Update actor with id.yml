@@ -1,11 +1,18 @@
 info:
-  name: GET /api/v1/actors/{actor_id}
+  name: Update actor with id
   type: http
-  seq: 2
+  seq: 4
 
 http:
-  method: GET
+  method: PUT
   url: "{{host}}/api/v1/actors/{{actor_id}}"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Clement Peerens\"\r
+
+      }"
   auth: inherit
 
 settings:
