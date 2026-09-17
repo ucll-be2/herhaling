@@ -1,0 +1,23 @@
+info:
+  name: PUT /api/v1/actors/{actor_id}
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{host}}/api/v1/actors/{{actor_id}}"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Clement Peerens\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
