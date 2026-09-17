@@ -16,9 +16,16 @@ http:
   auth: inherit
 
 runtime:
-  scripts:
-    - type: after-response
-      code: bru.setCollectionVar("actor_id", res.getBody().id);
+  actions:
+    - type: set-variable
+      phase: after-response
+      selector:
+        expression: res.body.id
+        method: jsonq
+      variable:
+        name: actor_id
+        scope: runtime
+      description: Set actor_id var
 
 settings:
   encodeUrl: true
