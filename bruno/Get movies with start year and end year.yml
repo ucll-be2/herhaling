@@ -1,5 +1,5 @@
 info:
-  name: Get movies with start year/end year
+  name: Get movies with start year and end year
   type: http
   seq: 7
 
