@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{host}}/api/v1/actors"
+  url: "{{baseUrl}}/api/v1/actors"
   body:
     type: json
     data: "{\r
@@ -23,9 +23,9 @@ runtime:
         expression: res.body.id
         method: jsonq
       variable:
-        name: actor_id
+        name: actorId
         scope: runtime
-      description: Set actor_id var
+      description: Set actorId var
 
 settings:
   encodeUrl: true

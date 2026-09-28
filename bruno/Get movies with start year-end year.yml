@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{host}}/api/v1/movies?startYear=1990&endYear=2000"
+  url: "{{baseUrl}}/api/v1/movies?startYear=1990&endYear=2000"
   params:
     - name: startYear
       value: "1990"
